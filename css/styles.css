@@ -1,0 +1,317 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #fff;
+  color: #000;
+  -webkit-font-smoothing: antialiased;
+}
+
+li {
+  list-style-type: none;
+}
+
+body,
+input,
+button {
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+button {
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+}
+
+
+/* Variables predifinidas */
+:root {
+  --cor-principal: #007696;
+  --cor-secundaria: #212529;
+}
+
+
+/* Estilos xerais */
+/* /////////////////////////////////////////////////////////////////// */
+/* Header  */
+.header__sup {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  background-color: #000;
+  margin-top: 20px;
+  padding: 3px 10px;
+}
+
+.header__ul {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.header__a {
+  color: #fff;
+}
+
+.header__a:hover {
+  text-decoration: underline;
+}
+
+
+
+.header__nav {
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  height: 80px;
+  padding: 0 10px;
+  max-width: 1600px;
+  width: 100%;
+  margin: 0 auto;
+  border-bottom: 2px solid #0075961c;
+}
+
+.nav__ul {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.nav__li {
+  display: flex;
+  align-items: center;
+}
+
+.nav__a {
+  color: var(--cor-principal);
+  display: flex;
+  align-items: center;
+  /* font-size: 1.1rem; */
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.nav__a:hover {
+  opacity: 0.5;
+}
+
+
+
+.header__portada {
+  display: flex;
+  gap: 10px;
+  padding: 10px 20px;
+}
+
+.header__graficos {
+  background-color: #000;
+  padding: 40px 0;
+  display: flex;
+  justify-content: space-evenly;
+  min-height: 7rem;
+}
+
+.header__grafico {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  border-right: 2px solid gray;
+}
+
+.grafico__a {
+  margin: 0 auto;
+}
+
+.grafico__img {
+  max-width: 150px;
+}
+
+.grafico__img:hover {
+  opacity: 0.5;
+}
+
+
+
+/*//////////////////////////////////////////////*/
+/* Estilos main */
+main {
+  max-width: 1140px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 50px 0;
+}
+
+
+
+/* Sección presentación*/
+.seccion__titulo {
+  color: var(--cor-principal);
+  font-size: 2.2rem;
+  margin-bottom: 24px;
+}
+
+.presentacion__contido {
+  display: flex;
+  gap: 15px;
+  max-width: 1140px;
+}
+
+.presentacion__img {
+  max-width: 350px;
+  height: 100%;
+}
+
+.presentacion__p {
+  color: var(--cor-secundaria);
+  font-size: 1.2rem;
+  padding-bottom: 20px;
+  word-spacing: 5px;
+  line-height: 1.6rem;
+}
+
+.presentacion__mais {
+  display: flex;
+  align-items: center;
+  padding: 20px 0;
+}
+
+.presentacion__frecha {
+  position: absolute;
+  z-index: -1;
+  max-width: 1160px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.presentacion__a {
+  text-align: end;
+  width: 100%;
+  color: var(--cor-principal);
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.presentacion__a:hover {
+  text-decoration: underline;
+}
+
+
+/* Sección comunicación*/
+.comunicacion {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.00) 39.19%, rgba(255, 255, 255, 0.00) 52.52%, #EFF7F9 67.64%, #EFF7F9 100%);
+}
+
+.comunicacion1,
+.comunicacion2,
+.comunicacion3 {
+  display: flex;
+  gap: 30px;
+  margin-bottom: 30px;
+}
+
+.comunicacion1__img,
+.comunicacion2__img {
+  max-width: 360px;
+  height: 100%;
+}
+
+.comunicacion__contido {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.comunicacion__data {
+  font-size: 14px;
+  color: var(--cor-secundaria);
+}
+
+.comunicacion__titular {
+  color: var(--cor-principal);
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 2.5rem;
+}
+
+.publicidade__p {
+  font-size: 12px;
+  color: #8a8a8a;
+  margin-bottom: 3px;
+}
+
+
+
+/* Seccion concursos*/
+.concursos__box{
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+
+
+.concurso__img{
+  width: 359px;
+}
+
+.concurso__box{
+  height: 100%;
+  background-repeat: no-repeat;
+  bottom: 40px;
+  position: relative;
+  background-image: url(../assets/shape_concurso.svg);
+}
+
+.concurso__p{
+  padding: 0 20px;
+  position: relative;
+  bottom: -40px;
+  font-size: 24px;
+  font-weight: 600;
+  color: var(--cor-principal);
+}
+
+
+
+/* Sección cámaras */
+.camaras{
+  display: flex;
+  justify-content: center;
+}
+
+
+
+/* Sección frecuencias*/
+.internacionais{
+  display: flex;
+}
+
+
+
+
+
+
+
+
+
+
+footer{
+  background-color: #a09b9b;
+}
+
+.rrss__img{
+  width: 24px;
+}
