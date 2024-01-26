@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CRTVG</title>
     <link rel="stylesheet" href="css/styles.css" />
+    <link rel="icon" href="assets/favicon.ico">
   </head>
   <body>
     <header>
@@ -15,45 +16,45 @@
           alt="Logo CRTVG"
         />
         <ul class="header__ul">
-          <li class="header__li"><a class="header__a" href="#">AGalega</a></li>
-          <li class="header__li"><a class="header__a" href="#">G24</a></li>
+          <li class="header__li"><a class="header__a" href="">AGalega</a></li>
+          <li class="header__li"><a class="header__a" href="">G24</a></li>
           <li class="header__li">
-            <a class="header__a" href="#">AGalega Audio</a>
+            <a class="header__a" href="">AGalega Audio</a>
           </li>
-          <li class="header__li"><a class="header__a" href="#">Xabarín</a></li>
+          <li class="header__li"><a class="header__a" href="">Xabarín</a></li>
         </ul>
       </div>
       <nav class="header__nav">
         <ul class="nav__ul">
           <li class="nav__li"><a class="nav__a" href="#">Portada</a></li>
           <li class="nav__li">
-            <a class="nav__a" href="#"
+            <a onclick="mostrar(presentacion)" class="nav__a" href=""
               >Presentacion
               <span><img src="assets/frecha.svg" alt="Icono de frecha" /></span
             ></a>
           </li>
           <li class="nav__li">
-            <a class="nav__a" href="#"
+            <a class="nav__a" href=""
               >#ComunicaciónG
               <span><img src="assets/frecha.svg" alt="Icono de frecha" /></span
             ></a>
           </li>
           <li class="nav__li">
-            <a class="nav__a" href="#"
+            <a class="nav__a" href=""
               >Programación
               <span><img src="assets/frecha.svg" alt="Icono de frecha" /></span
             ></a>
           </li>
-          <li class="nav__li"><a class="nav__a" href="#">#AcciónsG</a></li>
+          <li class="nav__li"><a class="nav__a" href="">#AcciónsG</a></li>
           <li class="nav__li">
-            <a class="nav__a" href="#"
+            <a class="nav__a" href=""
               >Portal de Transparencia
               <span><img src="assets/frecha.svg" alt="Icono de frecha" /></span
             ></a>
           </li>
           <li class="nav__li">
-            <a class="nav__a" href="#"
-              >contacta
+            <a class="nav__a" href=""
+              >Contacta
               <span><img src="assets/frecha.svg" alt="Icono de frecha" /></span
             ></a>
           </li>
@@ -66,15 +67,54 @@
           />
         </div>
       </nav>
+
+
+      <!-- Despregables-->
+      <div class="nav__presentacion despregables ocultar">
+        <p class="despregables__p">Presentacion</p>
+        <p class="despregables__p">A nosa historia</p>
+      </div>
+
+      <div class="nav__comunicacion despregables ocultar">
+        <p class="despregables__p">#ComunicaciónG</p>
+        <p class="despregables__p">Noticias Corporativas</p>
+        <p class="despregables__p">CRTVG Viva</p>
+      </div>
+
+      <div class="nav__programacion despregables ocultar">
+        <p class="despregables__p">Programación</p>
+        <p class="despregables__p">Programación TVG</p>
+        <p class="despregables__p">Programación RG</p>
+      </div>
+
+      <div class="nav__transparencia despregables ocultar">
+        <p class="despregables__p">Portal de Transparencia</p>
+        <p class="despregables__p">Información intitucional</p>
+        <p class="despregables__p">Actividade corporativa</p>
+        <p class="despregables__p">Responsabilidade Social Corporativa (RSC)</p>
+        <p class="despregables__p">Interacción con usuarios/as</p>
+      </div>
+
+      <div class="nav__contacta despregables ocultar">
+        <p class="despregables__p">Contacta</p>
+        <p class="despregables__p">Venda de imaxes</p>
+        <p class="despregables__p">Afíliate Xabarín</p>
+        <p class="despregables__p">Concursos e bases CRTVG</p>
+        <p class="despregables__p">Cámaras Web</p>
+      </div>
+      <!--Despregables -->
+
+
+      <div class="espaciador__48"></div>
       <div class="header__inf">
         <div class="header__portada">
           <img src="assets/Icon_home.svg" alt="Logo de inicio portada" />
-          <span class="header__separador">></span>
+          <img src="assets/frecha_horizontal.svg" alt="Icono de frecha horizontal">
           <p class="header__p">Portada</p>
         </div>
         <div class="header__graficos">
           <div class="header__grafico">
-            <a class="grafico__a" href="#"
+            <a class="grafico__a" href=""
               ><img
                 class="grafico__img"
                 src="assets/AGalega_logo_300px.png"
@@ -82,7 +122,7 @@
             /></a>
           </div>
           <div class="header__grafico">
-            <a class="grafico__a" href="#"
+            <a class="grafico__a" href=""
               ><img
                 class="grafico__img"
                 src="assets/G_24_logo_300px.png"
@@ -90,7 +130,7 @@
             /></a>
           </div>
           <div class="header__grafico">
-            <a class="grafico__a" href="#"
+            <a class="grafico__a" href=""
               ><img
                 class="grafico__img"
                 src="assets/AGalega_audio_300px.png"
@@ -98,7 +138,7 @@
             /></a>
           </div>
           <div class="header__grafico">
-            <a class="grafico__a" href="#"
+            <a class="grafico__a" href=""
               ><img
                 class="grafico__img"
                 src="assets/Xabarín_logo_300px.png"
@@ -108,6 +148,7 @@
         </div>
       </div>
     </header>
+
     <main>
       <section class="presentacion">
         <h1 class="seccion__titulo">PRESENTACIÓN</h1>
@@ -139,7 +180,7 @@
           </div>
         </div>
         <div class="presentacion__mais">
-          <a class="presentacion__a" href="#">Coñece máis sobre nós</a>
+          <a class="presentacion__a" href="">Coñece máis sobre nós</a>
           <img
             class="presentacion__frecha"
             src="assets/gradient-arrow-peq.png"
@@ -147,6 +188,7 @@
           />
         </div>
       </section>
+      <div class="espaciador__48"></div>
       <section class="comunicacion">
         <h2 class="seccion__titulo">COMUNICACIÓN G</h2>
         <div class="comunicacion__grande">
@@ -204,12 +246,12 @@
             </div>
           </div>
         </div>
-        <div class="comunicacion3">
+        <div class="comunicacion__pequeno">
           <div class="comunicacion3">
             <img
               src="assets/debateg24_Rec.jpg"
               alt="Foto do programa de debate"
-              class="comunicacion3"
+              class="comunicacion3__img"
             />
             <div class="comunicacion3__contido">
               <p class="comunicacion__data">22/01/2024</p>
@@ -223,7 +265,7 @@
             <img
               src="assets/NoiteXigante_DSCF6148(c)XaimeCortizo_Rec.jpg"
               alt="Foto do programa 'Noite Xigante'"
-              class="comunicacion3"
+              class="comunicacion3__img"
             />
             <div class="comunicacion3__contido">
               <p class="comunicacion__data">18/01/2024</p>
@@ -234,6 +276,7 @@
           </div>
         </div>
       </section>
+      <div class="espaciador__128"></div>
       <section class="concursos">
         <h2 class="seccion__titulo">CONCURSOS CRTVG</h2>
         <div class="concursos__box">
@@ -270,11 +313,8 @@
             </div>
           </div>
         </div>
-        <!-- <div class="concurso__mais">
-          <a class="concursos__a" href="#">Ver máis</a>
-        </div> -->
         <div class="presentacion__mais">
-          <a class="presentacion__a" href="#">Ver máis</a>
+          <a class="presentacion__a" href="">Ver máis</a>
           <img
             class="presentacion__frecha"
             src="assets/gradient-arrow-peq.png"
@@ -282,21 +322,25 @@
           />
         </div>
       </section>
+      <div class="espaciador__48"></div>
       <section class="camaras">
-        <a class="camaras__a" href="#"
+        <a class="camaras__a" href=""
           ><img
             class="camaras__img"
             src="assets/camaras.png"
             alt="Fotos das vistas das distintas cámaras dispoñibles"
         /></a>
       </section>
+      <div class="espaciador__48"></div>
       <section class="frecuencias">
-        <h2 class="seccion__titulo">FRECUENCIAS</h2>
+        <h2 class="seccion__titulo frecuencias__h2">FRECUENCIAS</h2>
         <div class="internacionais">
           <div class="america">
-            <p class="internacionais__titulo">Canales internacionais</p>
-            <div class="internacionais__imaxe">
+            <div class="internacionais__box">
+              <p class="internacionais__titulo">Canles internacionais</p>
               <p class="internacionais__p">Galicia TV América</p>
+            </div>
+            <div class="internacionais__imaxe">
               <img
                 src="assets/america.png"
                 alt="Grafismo de América"
@@ -305,9 +349,11 @@
             </div>
           </div>
           <div class="europa">
-            <p class="internacionais__titulo">Canales internacionais</p>
-            <div class="internacionais__imaxe">
+            <div class="internacionais__box">
+              <p class="internacionais__titulo">Canles internacionais</p>
               <p class="internacionais__p">Galicia TV Europa</p>
+            </div>
+            <div class="internacionais__imaxe">
               <img
                 src="assets/europa.png"
                 alt="Grafismo de Europa"
@@ -318,7 +364,9 @@
         </div>
         <div class="dixital">
           <div class="dixital__tvg">
-            <p class="dixital__p">TVG Dixital</p>
+            <div class="dixital__box">
+              <p class="dixital__p">TVG Dixital</p>
+            </div>
             <img
               src="assets/banner-2 1.png"
               alt="Imaxe con distintos puntos de Galicia e o logo da Galega"
@@ -326,7 +374,9 @@
             />
           </div>
           <div class="dixital__rg">
-            <p class="dixital__p">RG Dixital</p>
+            <div class="dixital__box">
+              <p class="dixital__p">RG Dixital</p>
+            </div>
             <img
               src="assets/banner-2 1.png"
               alt="Imaxe con distintos puntos de Galicia e o logo da Galega"
@@ -335,7 +385,10 @@
           </div>
         </div>
       </section>
+      <div class="espaciador__48"></div>
     </main>
+
+
     <footer>
       <div class="footer__sup">
         <div class="contacto">
@@ -350,31 +403,32 @@
         <div class="rrss">
           <p class="contacto__p">Síguenos en redes sociais</p>
           <a class="rrss__a" href=""
-            ><img class="rrss__img" src="assets/twitterc.svg" alt="Logo X"
+            ><img class="rrss__img" src="assets/x_twiter.png" alt="Logo X"
           /></a>
           <a class="rrss__a" href=""
-            ><img class="rrss__img" src="assets/Icon feather-facebook.svg" alt="Logo Facebook"
+            ><img class="rrss__img" src="assets/facebook.png" alt="Logo Facebook"
           /></a>
           <a class="rrss__a" href=""
-            ><img class="rrss__img" src="assets/instagram.svg" alt="Logo Instagram"
+            ><img class="rrss__img" src="assets/instagram.png" alt="Logo Instagram"
           /></a>
           <a class="rrss__a" href=""
-            ><img class="rrss__img" src="assets/youtube.svg" alt="Logo Youtube"
+            ><img class="rrss__img" src="assets/youtube.png" alt="Logo Youtube"
           /></a>
         </div>
       </div>
       <div class="footer__inf">
         <div class="politicas">
-          <a class="politicas__p" href="#"
+          <a class="politicas__p" href=""
             >Aviso legal e política de privacidade</a
           >
-          <a class="politicas__p" href="#">Política de cookies</a>
-          <a class="politicas__p" href="#">Xestión de cookies</a>
+          <a class="politicas__p" href="">Política de cookies</a>
+          <a class="politicas__p" href="">Xestión de cookies</a>
         </div>
         <div class="footer__logo">
           <a href="#"><img src="assets/logo-brand-footer.svg" alt="Logo da CRTVG" /></a>
         </div>
       </div>
     </footer>
+    <script src="js/script.js"></script>
   </body>
 </html>
