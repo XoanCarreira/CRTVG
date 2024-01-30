@@ -54,6 +54,8 @@ a {
 .header__ul {
   width: 100%;
   display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
   justify-content: space-evenly;
 }
 
@@ -176,7 +178,7 @@ main {
   max-width: 1140px;
   width: 100%;
   margin: 0 auto;
-  padding: 50px 0;
+  padding: 50px 5px;
 }
 
 
@@ -350,7 +352,6 @@ main {
 .internacionais {
   display: flex;
   flex-wrap: wrap;
-  /* justify-content: space-evenly; */
   gap: 30px;
 }
 
@@ -442,6 +443,12 @@ main {
   border-radius: 50%;
 }
 
+.rrss{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .rrss__img {
 
   margin-right: 10px;
@@ -530,9 +537,9 @@ main {
 }
 
 
+
+
 @media (width < 500px) {
-
-
   .comunicacion__publicidade {
     display: none;
   }

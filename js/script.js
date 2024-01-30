@@ -1,6 +1,6 @@
-const presentacion = document.querySelector(".nav__presentacion");
+// const presentacion = document.querySelector(".nav__presentacion");
 
 
-function mostrar(selector){
-    selector.classList.toggle("ocultar");
-}
+// function mostrar(selector){
+//     selector.classList.toggle("ocultar");
+// }
